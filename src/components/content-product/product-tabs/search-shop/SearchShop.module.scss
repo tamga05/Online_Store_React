@@ -1,0 +1,67 @@
+@import './../../../../sass/mixins.scss';
+@import './../../../../sass/vars.scss';
+
+.searchShop{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 35px;
+    @include media (md) {
+        flex-direction: column;
+    }
+
+    &InnerForm {
+            flex: 1 1 395px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include media (md) {
+                flex: 1 1 auto;
+            }
+            @include media (s) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            span {
+                font-size: 17px;
+                line-height: 20px;
+                opacity: 0.7;
+                @include media (s) {
+                    font-size: 15px;
+                    line-height: 18px;
+                    opacity: 1;
+                }
+
+            }
+    }
+}
+
+
+.fieldset {
+    flex: 1 1 434px;
+    @include media (md) {
+        flex: 1 1 auto;
+    }
+    @include media (s) {
+        max-width: 313px;
+        width: 100%;
+    }
+}
+.radioWrapper {
+    display: flex;
+    gap: 55px;
+    @include media (s) {
+        flex-direction: column;
+        gap: 15px;
+        label {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+}
+
+

@@ -1,0 +1,19 @@
+@import './../../../../../sass/vars';
+@import './../../../../../sass/mixins';
+
+
+.addressTable {
+    width: 70%;
+    @include media (s) {
+        width: 100%;
+    }
+}
+
+.Tablet {
+    display: none;
+    visibility: hidden;
+    @include media (md) {
+        display: block;
+        visibility: visible;
+    }
+}

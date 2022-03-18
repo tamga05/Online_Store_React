@@ -1,0 +1,15 @@
+
+@import './../../../sass/vars.scss';
+@import './../../../sass/mixins.scss';
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    @include media(md){
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include media(sm){
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,46 @@
+@import './vars.scss';
+
+
+@mixin media($breakpoint) {
+
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+    
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    
+    //Build the media query
+      @media (max-width: $breakpoint-value) {
+        @content;
+      }
+     } 
+    }
+// @mixin media ($width, $type:min){
+//     @if map_has_key($breakpoints, $width){
+//         $width: map_get($breakpoints, $width);
+//         @if $type==max{
+//             $width: $width - 1px;
+//         }
+//     }
+//     @media (#{$type}-width: $width){
+//         @content;
+//     }
+// }
+// @mixin media ($breakpoint,$width){
+//         @if map_has_key($breakpoints, $breakpoint){
+//         $width:map_get($breakpoints, $width);
+//         @if $width==max{
+//             $width:$width + 1px;
+//         }
+//          @media (max-width: #{map-get($breakpoints, $breakpoint)}){
+//             @content;
+//         }   
+//      }
+    // }
+// @mixin media ($breakpoint){
+//     @if map_has_key($breakpoints, $breakpoint){
+//         @media (max-width: #{map-get($breakpoints, $breakpoint)}){
+//         @content;
+//     }   
+// }
+// }

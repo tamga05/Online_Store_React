@@ -1,0 +1,36 @@
+@import './../../../../../../sass/mixins';
+@import './../../../../../../sass/vars';
+
+.tbody {
+    text-align: left;
+    border-bottom: 1px solid $mainGrey;
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    tr {
+        width: 100%;
+        display: block;
+    }
+    td, th {
+        display: inline-block;
+        width: 50%;
+    }
+    tr:last-child {
+        text-align: center;
+        td {
+            width: 100%;
+        }
+        button {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+    tr:nth-child(1),
+    tr:nth-child(4),
+    tr:nth-child(5),
+    tr:nth-child(6) {
+        margin-bottom: 20px;
+    }
+}

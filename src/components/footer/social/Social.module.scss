@@ -1,0 +1,16 @@
+@import './../../../sass/mixins.scss';
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 40px;
+    // padding: 40px;
+    @include media(md){
+        width: 100%;
+        background: white;
+    }
+}
+.img{
+    margin-right: 30px;
+}

@@ -1,0 +1,38 @@
+@import './../../../sass/vars.scss';
+
+.price{
+    position: relative;
+    
+}
+
+.ins{
+    font-family: 'Barlow';
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: $accentColor;
+    background:white ;
+    text-decoration: none;
+}
+.del{
+    font-family:'Barlow';
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    text-decoration: none;
+    position: absolute;
+    top:35px;
+    right: 0;
+    &::before{
+        content: "";
+        border-bottom: 1px solid #C4C4C4;
+        position: absolute;
+        width: 92%;
+        height: 50%;
+        transform: rotate(-5.33deg);
+        -webkit-transform: rotate(-5.33deg);
+        -moz-transform: rotate(-5.33deg);
+        -ms-transform: rotate(-5.33deg);
+        -o-transform: rotate(-5.33deg);
+}
+}

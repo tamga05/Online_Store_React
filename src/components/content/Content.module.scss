@@ -1,0 +1,25 @@
+@import './../../sass/mixins.scss';
+
+.content {
+    outline: 10px solid green;
+}
+.baner{
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    @include media (sm){
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+.products{
+    margin-bottom: 80px;
+}
+.saleBaner{
+    margin-bottom: 70px;
+}
+
+.buyWithProduct {
+    margin-bottom: 97px;
+}

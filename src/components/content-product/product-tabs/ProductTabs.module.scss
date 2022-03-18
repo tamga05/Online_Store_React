@@ -1,0 +1,30 @@
+@import './../../../sass/vars.scss';
+@import './../../../sass/mixins.scss';
+
+.tabListWrapper {
+    background-color: $baseColor;
+    padding: 23px 34px 18px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    @include media (md) {
+        margin-top: 30px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+}
+
+.tabList {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    @include media (md) {
+        flex-direction: column;
+        gap: 35px;
+        align-items: flex-start;
+    }
+}
+.ProductTabs__shop {
+    max-width: 1134px;
+    margin-left: auto;
+}

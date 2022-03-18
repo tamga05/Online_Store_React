@@ -1,0 +1,26 @@
+.selectSection{
+    display: flex;
+    justify-content: space-between;
+    // text-align: start;
+    position:relative;
+    border-bottom:2px solid #C4C4C4;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2F3035;
+}
+.subTitle{
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2F3035;
+}
+
+
+
+

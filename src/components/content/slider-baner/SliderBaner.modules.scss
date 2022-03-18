@@ -1,0 +1,53 @@
+@import './../../../sass/mixins.scss';
+.carousel-root{
+    max-width: 870px;
+}
+.carousel.carousel-slider{
+    // max-width: 70%;
+    @include media(s){
+        max-width: 100%;
+    }
+}
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow{
+    opacity: 1;
+}
+.carousel .control-next.control-arrow:before{
+    content:" ";
+    display: inline-block;
+    width: 16px;
+    height: 29px;
+    background-image: url("./../../../assets/images/slider-arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel .control-next.control-arrow:before,
+.carousel .control-prev.control-arrow:before{
+    border-left: none !important;
+    border-right:none !important;
+}
+.carousel .control-prev.control-arrow:before{
+    content:" ";
+    display: inline-block;
+    width: 16px;
+    height: 29px;
+    background-image: url("./../../../assets/images/slider-arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.carousel .carousel-status{
+    display: none;
+}
+.carousel.carousel-slider .control-arrow:hover{
+    background: none !important;
+}
+.carousel .thumbs-wrapper {
+    display: none;
+}
+.carousel .control-dots .dot{
+    border: 1px solid white !important;
+}

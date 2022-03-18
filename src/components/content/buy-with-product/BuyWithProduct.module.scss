@@ -1,0 +1,47 @@
+@import './../../../sass/vars';
+
+.title {
+    font-family: 'Barlow Bold', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2F3035;
+    margin: 0;
+    margin-bottom: 19px;
+}
+
+.list {
+    max-width: 665px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #2F3035;
+}
+
+.link {
+    color: #2F3035;
+    text-decoration: none;
+}
+
+.item {
+    height: 32px;
+    border: 2px solid $accentColor;
+    padding: 6px 0;
+    border: transparent;
+
+    &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid $accentColor;
+        transition: 0.2s;
+        text-shadow: 0 0 1px #2F3035;
+    }
+}

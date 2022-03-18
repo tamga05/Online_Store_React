@@ -1,0 +1,48 @@
+@import './../../../sass/vars.scss';
+
+.navCatalog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background: $baseColor;
+    padding: 4px 23px;
+    margin-right:8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.7;
+    &:hover{
+        opacity: 1;
+    }
+}
+.rigth{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+#demo-simple-select-autowidth-label{
+    padding: 0 ;
+}
+.mash{
+    content:'';
+    background-image: url('./../../../assets/images/mash.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 23px;
+    margin-right: 10px;
+    border: none;
+    margin-left: 34px;
+}
+.burger{
+    content:'';
+    background-image: url('./../../../assets/images/burger.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 23px;
+    border: none;
+}

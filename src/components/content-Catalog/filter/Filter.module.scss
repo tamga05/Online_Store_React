@@ -1,0 +1,38 @@
+@import './../../../sass/vars.scss';
+
+.filter{
+    width: 304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#panel1a-header{
+    padding: 0 !important;
+}
+.tabs{
+    align-self: flex-start;
+}
+.link{
+    margin-top: 15px;
+}
+.btn{
+    width: 85%;
+    height: 50px;
+    background: #F0F0F4;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    color: #BDBEC2;
+    margin:40px 15px 15px;
+}
+
+.droppingLink{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: $mainGrey;
+}

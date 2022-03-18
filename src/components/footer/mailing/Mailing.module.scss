@@ -1,0 +1,49 @@
+@import './../../../sass/mixins.scss';
+
+.mailing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-right: 30px;
+    @include media(md){
+        width: 100%;
+        align-items: center;
+    }
+}
+.header{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+    max-width: 222px;
+    text-align: start;
+    margin-bottom: 34px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+// .MuiOutlinedInput-root,
+// .MuiButtonBase-root.MuiButton-root{
+//     border-radius: 0 impotant !important;
+//     -webkit-border-radius: 0 impotant !important;
+//     -moz-border-radius: 0 impotant !important;
+//     -ms-border-radius: 0 impotant !important;
+//     -o-border-radius: 0 impotant !important;
+// }
+.input{
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+}
+// .MuiOutlinedInput-input{
+   
+// }

@@ -1,0 +1,44 @@
+@import './../../sass/mixins.scss';
+
+.footer{
+    background: #F0F0F4;
+}
+.footerContent{
+    min-height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top{
+    width: 100%;
+    padding: 0px 0 46px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include media(md){
+        justify-content: center;
+        padding:0px;
+    }
+}
+.magazin{
+    @include media(sm){
+        padding-right: 0px;
+    }
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    @include media(md){
+        background: white;
+        width: 100%;
+        padding:40px 0 16px;
+    }
+}
+.footerLink{
+    font-size: 10px;
+    line-height: 12px;
+    color: #48494D;
+    margin-left: 80px;
+}

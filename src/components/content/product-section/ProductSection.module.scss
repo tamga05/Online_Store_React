@@ -1,0 +1,71 @@
+@import './../../../sass/vars.scss';
+@import './../../../sass/mixins.scss';
+
+.productSection{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 370px;
+    min-width: 320px;
+    padding: 18px 0  16px 22px;
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    &:hover{
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    }
+    @include media(md){
+        margin:auto;
+    }
+    @include media(xs){
+        min-width: 235px;
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+.title{
+    font-family:'Barlow',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;    
+    display: flex;
+    align-items: center;
+    color: $primaryColor;
+    &:hover{
+        color: $accentColor;
+    }
+}
+.link{
+    position: relative;
+    text-decoration: none;
+    font-family: 'SF Pro Display',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 9px;
+        background-image: url("./../../../assets/images/arrow-rigth.png");
+        position: absolute;
+        top: 5px;
+        right: -10px;
+    }
+}
+.imgWrap{
+    @include media(xs){
+        display: flex;
+        align-items: center;
+    }
+}
+.img{
+    width: 100%;
+}

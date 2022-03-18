@@ -1,0 +1,44 @@
+@import './../../../../../sass/vars';
+@import './../../../../../sass/mixins';
+
+.addressTable {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-bottom: 100px;
+    @include media (md) {
+        display: none;
+        visibility: hidden;
+    }
+
+    thead {
+        font-size: 20px;
+        color: #2F3035;
+    }
+
+    th {
+        text-align: left;
+        font-weight: 400;
+
+        &:nth-child(1) {
+            width: calc(300/1133*100%);
+        }
+
+        &:nth-child(2) {
+            width: calc(250/1133*100%);
+        }
+
+        &:nth-child(3) {
+            width: calc(205/1133*100%);
+        }
+
+        &:nth-child(4) {
+            width: calc(235/1133*100%);
+        }
+
+        &:nth-child(5) {
+            width: calc(140/1133*100%);
+        }
+    }
+
+}

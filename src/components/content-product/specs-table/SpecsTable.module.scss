@@ -1,0 +1,37 @@
+@import './../../../sass/vars.scss';
+
+.rowTableSpecs {
+        border-bottom: 1px solid #C4C4C4;
+        height: 45px;
+
+        & td {
+                font-weight: 400;
+
+                &:first-child {
+                        width: 71%;
+                }
+
+                &:last-child {
+                        width: 29%;
+                }
+        }
+}
+
+.specsTable,
+.specsTableMore {
+        border-spacing: 0px;
+        max-width: 436px;
+        width: 100%;
+        border-collapse: collapse;
+}
+.specsTableMore {
+        margin-bottom: 20px;
+}
+details summary  {
+        list-style: none;
+        font-size: 14px;
+        line-height: 2.5;
+        color: $accentColor;
+        text-decoration: underline;
+        cursor: pointer;
+}

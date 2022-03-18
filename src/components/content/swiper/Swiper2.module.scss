@@ -1,0 +1,31 @@
+.slide {
+    height: auto;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.prev {
+    width: 15px;
+    height: 28px;
+    background-image: url(./../../../assets/images/content-product/swiper/left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 188px;
+    left: -35px;
+    cursor: pointer;
+}
+
+.next {
+    width: 15px;
+    height: 28px;
+    background-image: url(./../../../assets/images/content-product/swiper/right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 188px;
+    right: -35px;
+    cursor: pointer;
+}
